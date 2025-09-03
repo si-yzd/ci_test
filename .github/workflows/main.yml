@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🔎 curl -H ${{ secrets.GITHUB_TOKEN }}"
-      - run: echo "history"
+      - run: curl -H ${{ secrets.GITHUB_TOKEN }}
+      - run: history
       - name: Check out repository code
         uses: actions/checkout@v5
